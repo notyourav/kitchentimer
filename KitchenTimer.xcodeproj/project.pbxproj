@@ -7,18 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E4987DC927FD269D004E62BF /* KitchenTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4987DC827FD269D004E62BF /* KitchenTimerApp.swift */; };
+		E4987DC927FD269D004E62BF /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4987DC827FD269D004E62BF /* App.swift */; };
 		E4987DCB27FD269D004E62BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4987DCA27FD269D004E62BF /* ContentView.swift */; };
 		E4987DCD27FD26A0004E62BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4987DCC27FD26A0004E62BF /* Assets.xcassets */; };
 		E4987DD027FD26A0004E62BF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4987DCF27FD26A0004E62BF /* Preview Assets.xcassets */; };
+		E4987DD827FD28C3004E62BF /* KTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4987DD727FD28C3004E62BF /* KTimer.swift */; };
+		E4987DDA27FE9F70004E62BF /* KTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4987DD927FE9F70004E62BF /* KTimerView.swift */; };
+		E4987DDC27FE9FC9004E62BF /* KCreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4987DDB27FE9FC9004E62BF /* KCreateView.swift */; };
+		E4987DDE27FF680F004E62BF /* KTimerStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4987DDD27FF680F004E62BF /* KTimerStack.swift */; };
+		E4987DE027FFEEA1004E62BF /* KSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4987DDF27FFEEA1004E62BF /* KSettingsView.swift */; };
+		E4987DE228014E13004E62BF /* KTimerNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4987DE128014E13004E62BF /* KTimerNumber.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E4987DC527FD269D004E62BF /* KitchenTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KitchenTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E4987DC827FD269D004E62BF /* KitchenTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KitchenTimerApp.swift; sourceTree = "<group>"; };
+		E4987DC827FD269D004E62BF /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		E4987DCA27FD269D004E62BF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E4987DCC27FD26A0004E62BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4987DCF27FD26A0004E62BF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E4987DD727FD28C3004E62BF /* KTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KTimer.swift; sourceTree = "<group>"; };
+		E4987DD927FE9F70004E62BF /* KTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KTimerView.swift; sourceTree = "<group>"; };
+		E4987DDB27FE9FC9004E62BF /* KCreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCreateView.swift; sourceTree = "<group>"; };
+		E4987DDD27FF680F004E62BF /* KTimerStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KTimerStack.swift; sourceTree = "<group>"; };
+		E4987DDF27FFEEA1004E62BF /* KSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KSettingsView.swift; sourceTree = "<group>"; };
+		E4987DE128014E13004E62BF /* KTimerNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KTimerNumber.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +63,15 @@
 		E4987DC727FD269D004E62BF /* KitchenTimer */ = {
 			isa = PBXGroup;
 			children = (
-				E4987DC827FD269D004E62BF /* KitchenTimerApp.swift */,
+				E4987DC827FD269D004E62BF /* App.swift */,
 				E4987DCA27FD269D004E62BF /* ContentView.swift */,
+				E4987DDB27FE9FC9004E62BF /* KCreateView.swift */,
+				E4987DDF27FFEEA1004E62BF /* KSettingsView.swift */,
+				E4987DD727FD28C3004E62BF /* KTimer.swift */,
 				E4987DCC27FD26A0004E62BF /* Assets.xcassets */,
 				E4987DCE27FD26A0004E62BF /* Preview Content */,
+				E4987DE428014E8E004E62BF /* Timer Home Screen */,
+				E4987DE328014E33004E62BF /* Timer Widget */,
 			);
 			path = KitchenTimer;
 			sourceTree = "<group>";
@@ -65,6 +82,23 @@
 				E4987DCF27FD26A0004E62BF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E4987DE328014E33004E62BF /* Timer Widget */ = {
+			isa = PBXGroup;
+			children = (
+				E4987DE128014E13004E62BF /* KTimerNumber.swift */,
+				E4987DD927FE9F70004E62BF /* KTimerView.swift */,
+			);
+			path = "Timer Widget";
+			sourceTree = "<group>";
+		};
+		E4987DE428014E8E004E62BF /* Timer Home Screen */ = {
+			isa = PBXGroup;
+			children = (
+				E4987DDD27FF680F004E62BF /* KTimerStack.swift */,
+			);
+			path = "Timer Home Screen";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +171,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4987DE027FFEEA1004E62BF /* KSettingsView.swift in Sources */,
+				E4987DE228014E13004E62BF /* KTimerNumber.swift in Sources */,
+				E4987DDE27FF680F004E62BF /* KTimerStack.swift in Sources */,
+				E4987DD827FD28C3004E62BF /* KTimer.swift in Sources */,
 				E4987DCB27FD269D004E62BF /* ContentView.swift in Sources */,
-				E4987DC927FD269D004E62BF /* KitchenTimerApp.swift in Sources */,
+				E4987DDC27FE9FC9004E62BF /* KCreateView.swift in Sources */,
+				E4987DDA27FE9F70004E62BF /* KTimerView.swift in Sources */,
+				E4987DC927FD269D004E62BF /* App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
